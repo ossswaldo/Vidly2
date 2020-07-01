@@ -1,0 +1,28 @@
+﻿
+        <div class="navbar navbar-inverse navbar-fixed-top" style="background-color: 	#FFB6C1;">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @Html.ActionLink("Vidly", "Index", "Keys", new { area = "" }, new { @class = "navbar-brand" })
+
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Key Register", "Create", "Keys")</li>
+                        <li>@Html.ActionLink("User Register", "Create", "Users")</li>
+
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>@Html.ActionLink("Users", "Index", "Users")</li>
+                        <li>@Html.ActionLink("Log Out", "LogOut", "LogIn")</li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+  
